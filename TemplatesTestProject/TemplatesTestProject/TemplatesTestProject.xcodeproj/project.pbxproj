@@ -61,6 +61,7 @@
 		C00FC4C52263645B00C70F8D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C00FC4C62263645B00C70F8D /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		C00FC4CD2263648500C70F8D /* CleanComponentsMarkerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CleanComponentsMarkerProtocols.swift; path = "../../../../../CleanSwiftTemplates/Example/CleanSwiftTestProject/CleanSwiftTestProject/Clean Scene Common/CleanComponentsMarkerProtocols.swift"; sourceTree = "<group>"; };
+		C00FC4D0226368F500C70F8D /* CleanComponentsMarkerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanComponentsMarkerProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,13 +152,14 @@
 		C00FC4BD2263625B00C70F8D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				C00FC4C02263643600C70F8D /* Base */,
+				C00FC4CF226368EB00C70F8D /* Marker Protocols */,
+				C00FC4C02263643600C70F8D /* Base Scene */,
 				C00FC4CD2263648500C70F8D /* CleanComponentsMarkerProtocols.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		C00FC4C02263643600C70F8D /* Base */ = {
+		C00FC4C02263643600C70F8D /* Base Scene */ = {
 			isa = PBXGroup;
 			children = (
 				C00FC4C22263645B00C70F8D /* BaseConfigurator.swift */,
@@ -167,7 +169,15 @@
 				C00FC4C52263645B00C70F8D /* BaseViewController.swift */,
 				C00FC4C42263645B00C70F8D /* BaseWorker.swift */,
 			);
-			path = Base;
+			path = "Base Scene";
+			sourceTree = "<group>";
+		};
+		C00FC4CF226368EB00C70F8D /* Marker Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C00FC4D0226368F500C70F8D /* CleanComponentsMarkerProtocols.swift */,
+			);
+			path = "Marker Protocols";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
