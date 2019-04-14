@@ -20,7 +20,7 @@
 		C00FC4CA2263645B00C70F8D /* BaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4C42263645B00C70F8D /* BaseWorker.swift */; };
 		C00FC4CB2263645B00C70F8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4C52263645B00C70F8D /* BaseViewController.swift */; };
 		C00FC4CC2263645B00C70F8D /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4C62263645B00C70F8D /* BaseRouter.swift */; };
-		C00FC4CE2263648500C70F8D /* CleanComponentsMarkerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4CD2263648500C70F8D /* CleanComponentsMarkerProtocols.swift */; };
+		C00FC4D222636B7600C70F8D /* BaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4D122636B7600C70F8D /* BaseModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		C00FC4C42263645B00C70F8D /* BaseWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWorker.swift; sourceTree = "<group>"; };
 		C00FC4C52263645B00C70F8D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C00FC4C62263645B00C70F8D /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
-		C00FC4CD2263648500C70F8D /* CleanComponentsMarkerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CleanComponentsMarkerProtocols.swift; path = "../../../../../CleanSwiftTemplates/Example/CleanSwiftTestProject/CleanSwiftTestProject/Clean Scene Common/CleanComponentsMarkerProtocols.swift"; sourceTree = "<group>"; };
 		C00FC4D0226368F500C70F8D /* CleanComponentsMarkerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanComponentsMarkerProtocols.swift; sourceTree = "<group>"; };
+		C00FC4D122636B7600C70F8D /* BaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,6 @@
 			children = (
 				C00FC4CF226368EB00C70F8D /* Marker Protocols */,
 				C00FC4C02263643600C70F8D /* Base Scene */,
-				C00FC4CD2263648500C70F8D /* CleanComponentsMarkerProtocols.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -168,6 +167,7 @@
 				C00FC4C62263645B00C70F8D /* BaseRouter.swift */,
 				C00FC4C52263645B00C70F8D /* BaseViewController.swift */,
 				C00FC4C42263645B00C70F8D /* BaseWorker.swift */,
+				C00FC4D122636B7600C70F8D /* BaseModels.swift */,
 			);
 			path = "Base Scene";
 			sourceTree = "<group>";
@@ -315,8 +315,8 @@
 				C00FC4C82263645B00C70F8D /* BaseConfigurator.swift in Sources */,
 				C00FC4C92263645B00C70F8D /* BaseInteractor.swift in Sources */,
 				C00FC4CB2263645B00C70F8D /* BaseViewController.swift in Sources */,
+				C00FC4D222636B7600C70F8D /* BaseModels.swift in Sources */,
 				C00FC4CC2263645B00C70F8D /* BaseRouter.swift in Sources */,
-				C00FC4CE2263648500C70F8D /* CleanComponentsMarkerProtocols.swift in Sources */,
 				C00FC4CA2263645B00C70F8D /* BaseWorker.swift in Sources */,
 				C00FC481226361EB00C70F8D /* AppDelegate.swift in Sources */,
 				C00FC4C72263645B00C70F8D /* BasePresenter.swift in Sources */,

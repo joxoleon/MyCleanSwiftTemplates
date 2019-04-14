@@ -8,6 +8,13 @@
 
 import UIKit
 
+protocol PresentationLogic: class {
+}
+
+protocol Presenter: class {
+    var baseViewController: DisplayLogic? { get set }
+}
+
 class BasePresenter: PresentationLogic {
     
     // MARK: - Scene Component Properties

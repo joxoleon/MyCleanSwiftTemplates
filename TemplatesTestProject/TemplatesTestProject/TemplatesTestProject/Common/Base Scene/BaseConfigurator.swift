@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ConfiguratorLogic: class {
+    func configure(_ viewController: BaseViewController)
+}
+
 // Connects View, Interactor, and Presenter
 class BaseConfigurator: ConfiguratorLogic {
 

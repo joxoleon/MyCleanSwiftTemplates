@@ -8,4 +8,5 @@
 
 import UIKit
 
+protocol WorkerLogic: class {}
 class BaseWorker: WorkerLogic {}

@@ -8,6 +8,15 @@
 
 import UIKit
 
+protocol DisplayLogic: class {
+}
+
+protocol CleanViewController: DisplayLogic {
+    var baseConfigurator: ConfiguratorLogic? { get set }
+    var baseInteractor: BusinessLogic? { get set }
+    var baseRouter: RouterInput? { get set }
+}
+
 class BaseViewController: UIViewController, DisplayLogic, CleanViewController {
 
     // MARK: - Scene Component Properties

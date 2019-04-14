@@ -25,14 +25,7 @@ protocol ConfiguratorLogic: class {
 
 // MARK: ViewContorller
 
-protocol DisplayLogic: class {
-}
 
-protocol CleanViewController: DisplayLogic {
-    var baseConfigurator: ConfiguratorLogic? { get set }
-    var baseInteractor: BusinessLogic? { get set }
-    var baseRouter: RouterInput? { get set }
-}
 
 // MARK: Interactor
 

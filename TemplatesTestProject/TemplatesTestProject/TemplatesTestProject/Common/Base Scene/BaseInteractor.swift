@@ -8,6 +8,20 @@
 
 import UIKit
 
+protocol DataStore: class {
+    func onBaseChildViewControllerClosing(childDataStore: DataStore)
+}
+
+protocol BusinessLogic: class {
+    func businessLogicOnViewDidLoad()
+    func businessLogicOnViewWillAppear()
+}
+
+protocol Interactor: class {
+    var basePresenter: PresentationLogic? { get set }
+    var baseWorker: WorkerLogic? { get set }
+}
+
 class BaseInteractor: BusinessLogic, DataStore {
 
     // MARK: - Scene Component Properties

@@ -8,6 +8,24 @@
 
 import UIKit
 
+typealias ChildVCClosingHandler = (DataStore) -> ()
+typealias RouterInput = RoutingNavigation & DataPassing
+
+protocol RoutingNavigation: class {
+}
+
+protocol DataPassing: class {
+    var basePreviousSceneReceiveDataClosure: ChildVCClosingHandler? { get set }
+    func passDataToPreviousScene()
+    func passDataToNextScene(segue: UIStoryboardSegue)
+}
+
+protocol Router: class {
+    var baseDataStore: DataStore? { get set }
+    var baseViewController: ViewController? { get set }
+    var basePreviousSceneReceiveDataClosure: ChildVCClosingHandler? { get set }
+}
+
 class BaseRouter: RouterInput {
 
     // MARK: - Scene Components
