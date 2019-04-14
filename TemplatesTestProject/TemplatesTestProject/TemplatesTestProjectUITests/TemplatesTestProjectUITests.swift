@@ -2,7 +2,7 @@
 //  TemplatesTestProjectUITests
 //
 //  Created by Jovan Radivojsa on 4/14/19.
-//  Copyright © 2019 Jovan. All rights reserved Jovan Radivojsa
+//  Copyright © 2019 Jovan. All rights reserved.
 //
 
 import XCTest

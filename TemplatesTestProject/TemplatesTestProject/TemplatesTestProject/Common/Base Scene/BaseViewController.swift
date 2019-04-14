@@ -24,16 +24,18 @@ class BaseViewController: UIViewController, DisplayLogic, CleanViewController {
     var baseInteractor: BusinessLogic?
     var baseRouter: RouterInput?
 
-    // MARK: - Object Lifecycle
+    // MARK: - Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         baseInteractor?.businessLogicOnViewWillAppear()
+        onViewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         baseInteractor?.businessLogicOnViewWillAppear()
+        onViewWillAppear()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -46,4 +48,8 @@ class BaseViewController: UIViewController, DisplayLogic, CleanViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         baseRouter?.passDataToNextScene(segue: segue)
     }
+
+    func onViewDidLoad() { /* Override in concrete view controller */ }
+
+    func onViewWillAppear() { /* Override in concrete view controller */ }
 }
