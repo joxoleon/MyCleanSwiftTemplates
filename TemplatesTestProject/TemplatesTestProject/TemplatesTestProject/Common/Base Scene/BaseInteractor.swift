@@ -13,8 +13,6 @@ protocol DataStore: class {
 }
 
 protocol BusinessLogic: class {
-    func businessLogicOnViewDidLoad()
-    func businessLogicOnViewWillAppear()
 }
 
 protocol Interactor: class {
@@ -33,8 +31,4 @@ class BaseInteractor: BusinessLogic, DataStore {
     func onBaseChildViewControllerClosing(childDataStore: DataStore) {
         // Use 'childDataStore' to extract necessary data from the closing child view controller.
     }
-
-    func businessLogicOnViewDidLoad() { /* Override in concrete interactor */}
-
-    func businessLogicOnViewWillAppear() { /* Override in concrete interactor */ }
 }

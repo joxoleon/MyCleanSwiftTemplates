@@ -7,4 +7,7 @@
 
 import Foundation
 
-protocol Models {}
+protocol ModelsBase {}
+protocol RequestBase {}
+protocol ResponseBase {}
+protocol ViewModelBase {}

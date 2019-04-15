@@ -21,6 +21,13 @@
 		C00FC4CB2263645B00C70F8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4C52263645B00C70F8D /* BaseViewController.swift */; };
 		C00FC4CC2263645B00C70F8D /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4C62263645B00C70F8D /* BaseRouter.swift */; };
 		C00FC4D222636B7600C70F8D /* BaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FC4D122636B7600C70F8D /* BaseModels.swift */; };
+		C0E70B6A22637767000351D1 /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70B6322637767000351D1 /* TestPresenter.swift */; };
+		C0E70B6B22637767000351D1 /* TestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70B6422637767000351D1 /* TestWorker.swift */; };
+		C0E70B6C22637767000351D1 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70B6522637767000351D1 /* TestRouter.swift */; };
+		C0E70B6D22637767000351D1 /* TestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70B6622637767000351D1 /* TestModels.swift */; };
+		C0E70B6E22637767000351D1 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70B6722637767000351D1 /* TestViewController.swift */; };
+		C0E70B6F22637767000351D1 /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70B6822637767000351D1 /* TestInteractor.swift */; };
+		C0E70B7022637767000351D1 /* TestConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E70B6922637767000351D1 /* TestConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,13 @@
 		C00FC4C62263645B00C70F8D /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		C00FC4D0226368F500C70F8D /* CleanComponentsMarkerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanComponentsMarkerProtocols.swift; sourceTree = "<group>"; };
 		C00FC4D122636B7600C70F8D /* BaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModels.swift; sourceTree = "<group>"; };
+		C0E70B6322637767000351D1 /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		C0E70B6422637767000351D1 /* TestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWorker.swift; sourceTree = "<group>"; };
+		C0E70B6522637767000351D1 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		C0E70B6622637767000351D1 /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
+		C0E70B6722637767000351D1 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		C0E70B6822637767000351D1 /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
+		C0E70B6922637767000351D1 /* TestConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,13 @@
 		C00FC4AE2263622B00C70F8D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C0E70B6322637767000351D1 /* TestPresenter.swift */,
+				C0E70B6422637767000351D1 /* TestWorker.swift */,
+				C0E70B6522637767000351D1 /* TestRouter.swift */,
+				C0E70B6622637767000351D1 /* TestModels.swift */,
+				C0E70B6722637767000351D1 /* TestViewController.swift */,
+				C0E70B6822637767000351D1 /* TestInteractor.swift */,
+				C0E70B6922637767000351D1 /* TestConfigurator.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -311,12 +332,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E70B6E22637767000351D1 /* TestViewController.swift in Sources */,
 				C00FC483226361EB00C70F8D /* ViewController.swift in Sources */,
 				C00FC4C82263645B00C70F8D /* BaseConfigurator.swift in Sources */,
+				C0E70B6D22637767000351D1 /* TestModels.swift in Sources */,
+				C0E70B7022637767000351D1 /* TestConfigurator.swift in Sources */,
+				C0E70B6F22637767000351D1 /* TestInteractor.swift in Sources */,
+				C0E70B6A22637767000351D1 /* TestPresenter.swift in Sources */,
 				C00FC4C92263645B00C70F8D /* BaseInteractor.swift in Sources */,
 				C00FC4CB2263645B00C70F8D /* BaseViewController.swift in Sources */,
+				C0E70B6B22637767000351D1 /* TestWorker.swift in Sources */,
 				C00FC4D222636B7600C70F8D /* BaseModels.swift in Sources */,
 				C00FC4CC2263645B00C70F8D /* BaseRouter.swift in Sources */,
+				C0E70B6C22637767000351D1 /* TestRouter.swift in Sources */,
 				C00FC4CA2263645B00C70F8D /* BaseWorker.swift in Sources */,
 				C00FC481226361EB00C70F8D /* AppDelegate.swift in Sources */,
 				C00FC4C72263645B00C70F8D /* BasePresenter.swift in Sources */,

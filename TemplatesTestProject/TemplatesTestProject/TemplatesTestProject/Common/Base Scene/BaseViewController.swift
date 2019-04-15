@@ -28,13 +28,11 @@ class BaseViewController: UIViewController, DisplayLogic, CleanViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        baseInteractor?.businessLogicOnViewWillAppear()
         onViewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        baseInteractor?.businessLogicOnViewWillAppear()
         onViewWillAppear()
     }
 

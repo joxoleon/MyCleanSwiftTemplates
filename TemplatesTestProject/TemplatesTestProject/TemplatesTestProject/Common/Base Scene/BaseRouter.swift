@@ -12,6 +12,7 @@ typealias ChildVCClosingHandler = (DataStore) -> ()
 typealias RouterInput = RoutingNavigation & DataPassing
 
 protocol RoutingNavigation: class {
+    func popCurrentSceneFromNavigationController(animated: Bool)
 }
 
 protocol DataPassing: class {
@@ -34,6 +35,10 @@ class BaseRouter: RouterInput {
     var basePreviousSceneReceiveDataClosure: ChildVCClosingHandler?
 
     // MARK: Navigation
+
+    func popCurrentSceneFromNavigationController(animated: Bool) {
+        baseViewController?.navigationController?.popViewController(animated: animated)
+    }
     
     func performSegueWithIdentifier(segueId: String) {
         baseViewController?.performSegue(withIdentifier: segueId, sender: nil)
@@ -49,7 +54,7 @@ class BaseRouter: RouterInput {
 
     func passDataToPreviousScene() {
         guard let dataStore = baseDataStore else {
-            assertionFailure("Not Properly connected")
+            assertionFailure("Not Properly connected in configurator")
             return
         }
         // When closing pass data store to current scene
